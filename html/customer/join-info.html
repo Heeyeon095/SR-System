@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>customer-join-info</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/customer.css">
+</head>
+<body>
+  <div class="join-info-wrap">
+    <form action="" id="join-form">
+      <div class="join-form-box">
+        <div class="join-info-label-wrap">
+          <label for="join-email">이메일*</label>
+          <label for="join-pw">비밀번호*</label>
+          <label for="join-pw-check">비밀번호 확인*</label>
+          <label for="join-name">이름*</label>
+          <label for="join-phone-1">연락처*</label>
+          <label for="join-memo">메모*</label>
+        </div>
+        <div class="join-info-input-wrap">
+        <div>
+          <input type="text" name="join-email" id="join-email">
+          <button type="button">중복검사</button>
+        </div>
+        <input type="password" name="join-pw" id="join-pw">
+        <input type="password" name="join-pw-check" id="join-pw-check">
+        <input type="text" name="join-name" id="join-name">
+        <div>
+          <select name="join-phone-1" id="join-phone-1">
+            <option disabled selected>선택</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="012">012</option>
+            <option value="015">015</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select>
+          <input type="number" name="join-phone-2" id="join-phone-2">
+          <input type="number" name="join-phone-3" id="join-phone-3">
+          </div>
+          <input type="text" name="join-memo" id="join-memo">
+        </div>
+      </div>
+    <button type="submit" id="join-form-submit">가입</button>
+    </form>
+  </div>
+</body>
+</html>

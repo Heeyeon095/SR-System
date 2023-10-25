@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body > * {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input {
+  border: 1px solid #666;
+  background-color: #f7f7f7;
+  padding: 10px 15px;
+  transition: all 0.2s;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.index-wrap a {
+  display: inline-block;
+  border: 1px solid #666;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px;
+}
+
+.index-wrap a:hover {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  border: 1px solid blue;
+}
