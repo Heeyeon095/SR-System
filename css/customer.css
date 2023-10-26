@@ -345,7 +345,91 @@ header {
   cursor: pointer;
 }
 
-.request-search-input button:hover {
+.request-search-input button:hover,
+#request-excel-btn:hover {
   background-color: #aaa;
   color: #fff;
 }
+
+#request-excel-btn {
+  position: relative;
+  top: 130px;
+  left: calc(50% + 385px);
+  background-color: #eee;
+}
+
+.request-list {
+  position: relative;
+  top: 150px;
+  left: calc(50% - 500px);
+  width: 1000px;
+  border: 1px solid #666;
+  border-spacing: 0;
+}
+
+.request-list > thead {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+}
+
+.request-list td {
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #666;
+}
+
+.request-list-title {
+  width: 30%;
+}
+
+.request-list tr:last-child td {
+  border-bottom: none;
+}
+
+.page-on {
+  color: blue;
+  text-decoration: underline;
+}
+
+.request-list-page {
+  position: relative;
+  top: 180px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.request-list-page a {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.request-list-page a:hover {
+  text-decoration: underline;
+}
+
+.request-list-page i:first-child {
+  color: #bbb;
+}
+
+.request-list-page i {
+  margin: 0 10px;
+}
+
+.request-list-add-btn {
+  position: relative;
+  top: 148px;
+  left: calc(50% + 380px);
+  width: 120px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.request-list-add-btn:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+
+/* request-add */
+
