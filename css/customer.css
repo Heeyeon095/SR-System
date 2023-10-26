@@ -67,7 +67,8 @@
   padding: 10px 20px;
 }
 
-.agree-check input {
+.agree-check input,
+#agree-all-check {
   height: 16px;
   width: 16px;
 }
@@ -433,3 +434,52 @@ header {
 
 /* request-add */
 
+.req-add-wrap {
+  position: relative;
+  top: 20px;
+  left: calc(50% - 600px);
+  width: 1200px;
+}
+
+.req-add-top > div {
+  display: flex;
+  height: 40px;
+  border: 1px solid #666;
+  border-bottom: none;
+}
+
+.req-add-top > div:last-child {
+  border-bottom: 1px solid #666;
+}
+
+.req-add-title {
+  width: 230px;
+}
+
+
+.req-add-title > * {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-right: 1px solid #666;
+  padding: 0 10px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.req-add-wrap *:focus {
+  outline: none;
+}
+
+.req-add-input {
+  width: 970px;
+}
+
+.req-add-input > * {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+}

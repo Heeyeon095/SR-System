@@ -6,6 +6,7 @@
   <title>customer-join-agree</title>
   <link rel="stylesheet" href="../../css/index.css">
   <link rel="stylesheet" href="../../css/customer.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
 </head>
 <body>
   <div class="agree-wrap">
@@ -14,7 +15,7 @@
         <p>이용약관(필수)</p>
         <div class="agree-check">
           <span>동의합니다</span>
-          <input type="checkbox">
+          <input type="checkbox" name="agree-check">
         </div>
       </div>
       <div class="agree-text">
@@ -26,7 +27,7 @@
         <p>개인정보 수집 이용 동의(필수)</p>
         <div class="agree-check">
           <span>동의합니다</span>
-          <input type="checkbox">
+          <input type="checkbox" name="agree-check">
         </div>
       </div>
       <div class="agree-text">
@@ -34,11 +35,30 @@
       </div>
     </div>
     <span>위의 모든 약관에 동의합니다.</span>
-    <input type="checkbox">
+    <input type="checkbox" id="agree-all-check">
     <div class="agree-button-wrap">
       <button id="cancel-button">취소</button>
       <button id="agree-button">동의</button>
     </div>
   </div>
 </body>
+
+<script>
+
+document.querySelector('#agree-all-check').addEventListener('click', function () {
+
+  if (document.getElementById("agree-all-check").checked == true) {
+    
+    for (var i = 0; i < 3; i++) document.getElementsByName("agree-check")[i].checked = true;
+    
+  } else if (document.getElementById('agree-all-check').checked == false) {
+
+    for (var i = 0; i < 3; i++) document.getElementsByName('agree-check')[i].checked = false;
+
+  };
+
+});
+
+</script>
+
 </html>

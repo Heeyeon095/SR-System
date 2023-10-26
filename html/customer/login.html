@@ -6,16 +6,30 @@
   <title>customer-login</title>
   <link rel="stylesheet" href="../../css/index.css">
   <link rel="stylesheet" href="../../css/customer.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
 </head>
 <body>
   <div class="login-box">
     <form action="" id="login-form">
-      <input name="customer-login-email" type="text" placeholder="이메일을 입력하세요">
-      <input name="customer-login-pw" type="text" placeholder="비밀번호를 입력하세요">
+      <input name="customer-login-email" type="text" placeholder="이메일을 입력하세요" id="login-email">
+      <input name="customer-login-pw" type="text" placeholder="비밀번호를 입력하세요" id="login-pw">
       <button type="submit" id="login-customer">로그인</button>
     </form>
     <a href="#">회원가입</a>
   </div>
   <div class="login-bg"></div>
 </body>
+
+<script>
+
+document.querySelector('#login-form').addEventListener('submit', function () {
+  if(document.querySelector('#login-email').value == '') {
+    alert('이메일을 입력해주세요');
+  } else if(document.querySelector('#login-pw').value == '') {
+    alert('비밀번호를 입력해주세요');
+  };
+});
+
+</script>
+
 </html>
