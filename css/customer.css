@@ -207,7 +207,7 @@ form>div>* {
   left: calc(50% - 500px);
   width: 1000px;
   height: 600px;
-  border: 1px solid #666;
+  border: 1px solid #999;
   text-align: center;
   padding-top: 220px;
 }
@@ -291,12 +291,12 @@ header {
   height: 45px;
   line-height: 45px;
   padding-left: 20px;
-  border: 1px solid #666;
+  border: 1px solid #999;
   border-bottom: none;
 }
 
 .request-search-wrap li:last-child {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #999;
 }
 
 .request-search-title {
@@ -364,7 +364,7 @@ header {
   top: 150px;
   left: calc(50% - 500px);
   width: 1000px;
-  border: 1px solid #666;
+  border: 1px solid #999;
   border-spacing: 0;
 }
 
@@ -377,7 +377,7 @@ header {
 .request-list td {
   height: 50px;
   text-align: center;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #999;
 }
 
 .request-list-title {
@@ -436,38 +436,39 @@ header {
 
 .req-add-wrap {
   position: relative;
-  top: 20px;
+  top: 50px;
   left: calc(50% - 600px);
   width: 1200px;
 }
 
 .req-add-top > div {
   display: flex;
-  height: 40px;
-  border: 1px solid #666;
+  height: 45px;
+  border: 1px solid #999;
   border-bottom: none;
 }
 
-.req-add-top > div:last-child {
-  border-bottom: 1px solid #666;
-}
-
 .req-add-title {
-  width: 230px;
+  border-right: 1px solid #999;
 }
-
 
 .req-add-title > * {
-  width: 100%;
+  width: 230px;
   height: 100%;
   border: none;
-  border-right: 1px solid #666;
   padding: 0 10px;
   font-size: 16px;
   background-color: #fff;
+  line-height: 42px;
+  font-weight: bold;
 }
 
-.req-add-wrap *:focus {
+.req-add-title:nth-child(3) {
+  border-left: 1px solid #999;
+}
+
+.req-add-wrap input:focus,
+.req-add-wrap select:focus {
   outline: none;
 }
 
@@ -475,11 +476,208 @@ header {
   width: 970px;
 }
 
-.req-add-input > * {
+.req-add-input2,
+.req-add-input3 {
+  width: 370px;
+}
+
+.req-add-input3 {
+  display: flex;
+  text-align: right;
+  line-height: 43px;
+}
+
+.req-add-input3 > p {
+  width: 50%;
+  font-size: 12px;
+  color: #666;
+  padding: 0 10px;
+}
+
+.req-add-input3 > p:first-child {
+  border-right: 1px solid #999;
+}
+
+
+.req-add-input > *,
+.req-add-input2 > * {
   width: 100%;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   border: none;
   background-color: #fff;
   font-size: 16px;
+  line-height: 43px;
+}
+
+.req-add-input3 div:first-child {
+  width: 60%;
+  border-right: 1px solid #999;
+}
+
+.req-add-input3 div:last-child {
+  width: 40%;
+}
+
+.ck-editor__editable {
+  height: 500px;
+}
+
+.req-add-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.req-add-bottom button {
+  display: block;
+  width: 200px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.req-add-bottom button:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+
+/* request-detail */
+
+.req-add-title2 {
+  width: 100%;
+  line-height: 43px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.req-add-title2 div {
+  width: 175px;
+  text-align: right;
+  border-left: 1px solid #999;
+  font-size: 14px;
+  color: #999;
+}
+
+.req-add-mid > p {
+  border: 1px solid #999;
+  height: 500px;
+  padding: 10px;
+}
+
+.req-fb-wrap {
+  position: relative;
+  top: 100px;
+  left: calc(50% - 600px);
+  width: 1200px;
+}
+
+.req-fb-wrap > div {
+  border: 1px solid #999;
+  border-bottom: none;
+  border-top: none;
+}
+
+.req-fb-wrap > div:first-child {
+  border-top: 1px solid #999;
+}
+
+.req-fb-wrap > div > div {
+  display: flex;
+  border-bottom: 1px solid #999;
+  height: 45px;
+  line-height: 45px;
+}
+
+.req-fb-wrap .req-fb-content p {
+  width: 1200px;
+}
+
+.req-fb-wrap > div > div > p {
+  width: 600px;
+  padding: 0 10px;
+}
+
+.req-fb-wrap > div > div > p:first-child {
+  border-right: 1px solid #999;
+}
+
+.req-fb-wrap > div > div:nth-child(2) > p {
+  border-right: none;
+}
+
+.req-fb-customer {
+  text-align: right;
+}
+
+.req-fb-wrap #delete-btn {
+  width: 200px;
+  height: 32px;
+  line-height: 13px;
+}
+
+.req-fb-wrap #delete-btn:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.req-fb-content-add {
+  position: relative;
+  top: 150px;
+  left: calc(50% - 600px);
+  width: 1200px;
+}
+
+.req-fb-content-add input {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  color: rgb(47, 125, 226);
+  font-size: 16px;
+}
+
+.req-fb-content-add input:focus {
+  outline: none;
+}
+
+.req-fb-content-add button {
+  width: 200px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.req-fb-content-add button:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+
+/* request-edited */
+
+.req-edit-alert {
+  padding: 30px 10px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
+
+/* request-fb-del */
+
+.req-fb-wrap .req-fb-customer-del {
+  height: 45px;
+  padding: 0 10px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.req-fb-customer-del button {
+  width: 200px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.req-fb-customer-del button:hover {
+  background-color: #aaa;
+  color: #fff;
 }

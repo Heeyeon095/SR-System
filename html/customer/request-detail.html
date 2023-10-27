@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request-add</title>
+  <title>request-detail</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="../../css/index.css" />
     <link rel="stylesheet" href="../../css/customer.css" />
-    <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
 </head>
 <body>
@@ -28,18 +27,9 @@
     <div class="req-add-top">
 
       <div>
-        <div class="req-add-title">
-          <select name="" id="">
-            <option value="" selected>시스템선택</option>
-            <option value="">제목</option>
-            <option value="">우선순위선택</option>
-            <option value="">완료기한선택</option>
-            <option value="">요청여부(디폴트:요청)</option>
-            <option value="">내용</option>
-          </select>
-        </div>
-        <div class="req-add-input">
-          <input type="text" maxlength="50">
+        <div class="req-add-title2">
+          <p>[시스템이름] 제목영역 입니다.</p>
+          <div>SR번호 1234</div>
         </div>
       </div>
 
@@ -56,6 +46,21 @@
         </div>
         <div class="req-add-input3">
           <p></p>
+          <p>등록일 23.10.27 12:53</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="req-add-title">
+          <p>상태</p>
+        </div>
+        <div class="req-add-input2">
+          <p>요청</p>
+        </div>
+        <div class="req-add-title">
+          <p>상태</p>
+        </div>
+        <div class="req-add-input2">
           <p></p>
         </div>
       </div>
@@ -65,59 +70,95 @@
           <p>우선순위</p>
         </div>
         <div class="req-add-input2">
-          <select name="req-add-important" id="req-add-important">
-            <option value="important-low">낮음</option>
-            <option value="important-regular">보통</option>
-            <option value="important-high">높음</option>
-            <option value="important-emergency">긴급</option>
-            <option value="important-now">즉시</option>
-          </select>
+          <p>보통</p>
         </div>
         <div class="req-add-title">
-          <p>완료기한</p>
+          <p>담당자</p>
         </div>
         <div class="req-add-input2">
-          <input type="date">
+          <p></p>
         </div>
       </div>
 
       <div>
         <div class="req-add-title">
-          <p>요청여부</p>
+          <p>요청기한</p>
         </div>
         <div class="req-add-input2">
-          <select name="req-status" id="req-status">
-            <option value="req-req" selected>요청</option>
-            <option value="req-check">확인</option>
-            <option value="req-reCheck">재검토</option>
-          </select>
+          <p>23.10.27</p>
         </div>
+        <div class="req-add-title">
+          <p>시작일</p>
+        </div>
+        <div class="req-add-input2">
+          <p></p>
+        </div>
+      </div>
+
+      <div>
         <div class="req-add-title">
           <p></p>
         </div>
+        <div class="req-add-input3">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="req-add-title">
+          <p>완료일</p>
+        </div>
         <div class="req-add-input2">
-          <input type="text">
+          <p></p>
         </div>
       </div>
 
     </div>
 
     <div class="req-add-mid">
-      <textarea name="req-content" id="editor"></textarea>
+      <p>내용 영역입니다.</p>
     </div>
 
     <div class="req-add-bottom">
-      <button type="button" id="cancel-btn">취소</button>
-      <button type="button" id="add-btn">등록</button>
+      <button type="button" id="cancel-btn">수정</button>
     </div>
 
   </div>
 
-  <script>
-    ClassicEditor.create( document.querySelector( '#editor' ), {
-      language: "ko"
-    } );
-  </script>
+  <div class="req-fb-wrap">
+
+    <div class="req-fb-admin">
+      <div class="req-fb-writer">
+        <p>관리자(email@ehd.kr)</p>
+        <p></p>
+      </div>
+      <div class="req-fb-content">
+        <p>피드백 내용입니다.</p>
+      </div>
+      <div class="req-fb-date">
+        <p>등록일 23.10.27</p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="req-fb-customer">
+      <div class="req-fb-writer">
+        <p></p>
+        <p><button type="button" id="delete-btn">삭제</button> 작성자(email@ehd.kr)</p>
+      </div>
+      <div class="req-fb-content">
+        <p>피드백 내용입니다.</p>
+      </div>
+      <div class="req-fb-date">
+        <p></p>
+        <p>등록일 23.10.27</p>
+      </div>
+    </div>
+
+  </div>
+  
+  <form action="" class="req-fb-content-add">
+    <input type="text"></input>
+    <button type="submit" id="add-btn">등록</button>
+  </form>
 
 </body>
 </html>
