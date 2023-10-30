@@ -29,13 +29,7 @@
   font-size: 1.1rem;
   background-color: #ddd;
   font-weight: bold;
-  cursor: pointer;
   text-align: center;
-}
-
-#login-form button:hover {
-  background-color: #999;
-  color: #fff;
 }
 
 .login-bg {
@@ -89,7 +83,6 @@
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  cursor: pointer;
 }
 
 #cancel-button {
@@ -191,7 +184,6 @@ form>div>* {
   color: #fff;
   font-weight: bold;
   font-size: 18px;
-  cursor: pointer;
 }
 
 #join-form-submit:hover {
@@ -224,7 +216,6 @@ form>div>* {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .join-success-wrap button:hover {
@@ -342,14 +333,6 @@ header {
   width: 120px;
   margin-top: 4px;
   line-height: 10px;
-  background-color: #eee;
-  cursor: pointer;
-}
-
-.request-search-input button:hover,
-#request-excel-btn:hover {
-  background-color: #aaa;
-  color: #fff;
 }
 
 #request-excel-btn {
@@ -397,7 +380,6 @@ header {
   position: relative;
   top: 180px;
   text-align: center;
-  cursor: pointer;
 }
 
 .request-list-page a {
@@ -423,7 +405,6 @@ header {
   left: calc(50% + 380px);
   width: 120px;
   background-color: #eee;
-  cursor: pointer;
 }
 
 .request-list-add-btn:hover {
@@ -532,12 +513,6 @@ header {
   display: block;
   width: 200px;
   margin-top: 10px;
-  cursor: pointer;
-}
-
-.req-add-bottom button:hover {
-  background-color: #aaa;
-  color: #fff;
 }
 
 
@@ -643,13 +618,7 @@ header {
 .req-fb-content-add button {
   width: 200px;
   margin-top: 10px;
-  cursor: pointer;
   margin-bottom: 100px;
-}
-
-.req-fb-content-add button:hover {
-  background-color: #aaa;
-  color: #fff;
 }
 
 
@@ -664,20 +633,132 @@ header {
 
 /* request-fb-del */
 
-.req-fb-wrap .req-fb-customer-del {
+.req-fb-wrap .req-fb-customer-del > p {
   height: 45px;
   padding: 0 10px;
   padding-top: 5px;
   text-align: right;
+  border-bottom: 1px solid #999;
 }
 
 .req-fb-customer-del button {
   width: 200px;
   height: 35px;
-  cursor: pointer;
+  padding: 5px 0;
 }
 
-.req-fb-customer-del button:hover {
-  background-color: #aaa;
-  color: #fff;
+.req-fb-customer-del button i {
+  font-size: 14px;
+}
+
+.req-fb-customer-del-con p {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #999;
+  padding: 0 20px;
+  text-align: right;
+  background-color: #eee;
+}
+
+.req-fb-customer-del-con p:last-child {
+  border-bottom: none;
+}
+
+
+/* my page */
+
+.customer-page-wrap {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(50% - 500px);
+  width: 1000px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.customer-page {
+  display: flex;
+}
+
+.customer-page > div > p {
+  height: 60px;
+}
+
+.customer-page-title {
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.customer-page-con {
+  width: 75%;
+  text-align: left;
+}
+
+.customer-page-wrap button {
+  width: 200px;
+}
+
+
+/* my page */
+
+#page-edit {
+  text-align: center;
+}
+
+.customer-page-con input {
+  width: 70%;
+  height: 45px;
+  margin-top: -15px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.customer-page-phone {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.customer-page-phone select {
+  width: 150px;
+  height: 45px;
+  margin-top: -13px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.customer-page-phone input {
+  width: 150px;
+  padding-left: 10px;
+  margin-top: -13px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.customer-page-checkbox {
+  display: flex;
+  margin-top: -20px;
+  padding-top: 25px;
+}
+
+.customer-page-checkbox input {
+  width: 20px;
+  height: 20px;
+  margin-top: 1.5px;
+  margin-right: 5px;
+}
+
+.customer-page-pwcheck {
+  margin-top: 10px;
+}
+
+.customer-page-pwcheck input {
+  display: block;
+  background-color: #eee;
+}
+
+.customer-page-pwcheck input:last-child {
+  margin-top: 15px;
 }

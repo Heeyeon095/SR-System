@@ -21,11 +21,24 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
 button, input {
-  border: 1px solid #666;
-  background-color: #f7f7f7;
+  border: 1px solid #999;
+  background-color: #eee;
   padding: 10px 15px;
   transition: all 0.2s;
+}
+
+input:focus {
+  outline: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
