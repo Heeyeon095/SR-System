@@ -19,6 +19,7 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 
 button {
@@ -62,4 +63,64 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: underline;
   font-weight: bold;
   border: 1px solid blue;
+}
+
+
+/* gnb */
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.gnb-logo {
+  width: 13%;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  text-align: center;
+  line-height: 50px;
+}
+
+.gnb-login-mid {
+  width: 70%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.gnb-login-text {
+  position: relative;
+  width: 17%;
+}
+
+.gnb-login-text p {
+  position: absolute;
+  top: 13px;
+  width: 100%;
+  text-align: center;
+}
+
+.gnb-login {
+  display: none;
+}
+
+.gnb-login-mid li {
+  height: 40px;
+  background-color: #eee;
+  border-bottom: 1px solid #999;
+  line-height: 20px;
+  padding: 10px 30px;
+  margin-left: -30px;
+  text-align: center;
+  display: none;
+}
+
+.gnb-login-mid li:first-child {
+  border-top: 1px solid #999;
 }

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin-Request-list</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/customer.css" />
+    <link rel="stylesheet" href="../../css/admin.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+  </head>
+  <body>
+    <header>
+      <div class="gnb-logo">logo</div>
+      <div class="gnb-login-mid">
+        <a>SR관리</a>
+        <a>
+          <ul class="gnb-nav">시스템관리
+            <li><a href="#">고객사 관리</a></li>
+            <li><a href="#">고객 관리</a></li>
+            <li><a href="#">관리자 관리</a></li>
+          </ul>
+        </a>
+        <a>통계</a>
+        <a>김고객님</a>
+      </div>
+      <div class="gnb-login-text">
+        <p class="gnb-login">로그인</p>
+        <p class="gnb-logout">로그아웃</p>
+      </div>
+    </header>
+
+    <form action="" class="request-search-wrap">
+      <ul class="request-search-title">
+        <li>기간</li>
+        <li>구분</li>
+        <li>검색어</li>
+      </ul>
+      <ul class="request-search-input">
+        <li>
+          <input type="date" />
+          <p>~</p>
+          <input type="date" />
+        </li>
+        <li>
+          <select name="" id="">
+            <option value="" disabled selected>선택</option>
+          </select>
+          <select name="" id="">
+            <option value="" disabled selected>선택</option>
+          </select>
+          <select name="" id="">
+            <option value="" disabled selected>선택</option>
+            <option value="">요청</option>
+            <option value="">확인</option>
+            <option value="">재검토</option>
+            <option value="">접수</option>
+            <option value="">처리중</option>
+            <option value="">완료</option>
+            <option value="">재처리</option>
+          </select>
+        </li>
+        <li>
+          <input type="text" />
+          <button type="reset">리셋</button>
+          <button type="submit">검색</button>
+        </li>
+      </ul>
+    </form>
+
+    <button type="button" id="request-excel-btn">엑셀 다운로드</button>
+
+    <table class="request-list">
+      <thead>
+        <td>SR번호</td>
+        <td>사명</td>
+        <td>제목</td>
+        <td>작성자</td>
+        <td>등록일</td>
+        <td>수정일</td>
+        <td>요청여부</td>
+        <td>처리여부</td>
+        <td>담당자</td>
+        <td>처리일</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>번호</td>
+          <td>관리시스템</td>
+          <td class="request-list-title">요청사항 올립니다.</td>
+          <td>작성자</td>
+          <td>2023.10.26</td>
+          <td>2023.10.26</td>
+          <td>요청</td>
+          <td>접수</td>
+          <td>이희연</td>
+          <td>2023.10.26</td>
+        </tr>
+        <tr>
+          <td>번호</td>
+          <td>관리시스템</td>
+          <td class="request-list-title">요청사항 올립니다.</td>
+          <td>작성자</td>
+          <td>2023.10.26</td>
+          <td>2023.10.26</td>
+          <td>요청</td>
+          <td>접수</td>
+          <td>이희연</td>
+          <td>2023.10.26</td>
+        </tr>
+        <tr>
+          <td>번호</td>
+          <td>관리시스템</td>
+          <td class="request-list-title">요청사항 올립니다.</td>
+          <td>작성자</td>
+          <td>2023.10.26</td>
+          <td>2023.10.26</td>
+          <td>요청</td>
+          <td>접수</td>
+          <td>이희연</td>
+          <td>2023.10.26</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="request-list-title"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="request-list-title"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="request-list-title"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="request-list-title"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="request-list-title"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="request-list-title"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="request-list-title"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="request-list-page">
+      <p>
+        <i class="fa-solid fa-chevron-left"></i>
+
+        <a href="#" class="page-on">1</a>
+
+        <a href="#">2</a>
+
+        <a href="#">3</a>
+
+        <a href="#">4</a>
+
+        <a href="#">5</a>
+
+        <a href="#">6</a>
+
+        <a href="#">7</a>
+
+        <a href="#">8</a>
+
+        <a href="#">9</a>
+
+        <a href="#">10</a>
+
+        <i class="fa-solid fa-chevron-right"></i>
+      </p>
+    </div>
+
+    <button type="button" class="request-list-add-btn">등록</button>
+  </body>
+</html>

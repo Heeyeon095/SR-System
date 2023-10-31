@@ -1,0 +1,145 @@
+/* login */
+
+.login-box {
+  padding-top: 100px;
+}
+
+.login-box h1 {
+  font-size: 3rem;
+}
+
+.login-box p {
+  font-size: 1.3rem;
+}
+
+
+/* admin-stats */
+
+#admin-stats {
+  position: relative;
+  top: 100px;
+  left: calc(50% - 500px);
+  width: 1000px;
+  border-bottom: 1px solid #999;
+}
+
+#admin-stats > div {
+  display: flex;
+}
+
+#admin-stats label {
+  width: 200px;
+  border: 1px solid #999;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+  border-bottom: none;
+  border-right: none;
+}
+
+#admin-stats > div > p {
+  height: 45px;
+  width: 800px;
+  border: 1px solid #999;
+  border-bottom: none;
+  padding: 3px 10px;
+}
+
+#admin-stats input {
+  width: 200px;
+  background-color: #fff;
+}
+
+#admin-stats select {
+  width: 200px;
+  height: 35px;
+}
+
+#admin-stats button {
+  width: 120px;
+  height: 38px;
+  margin-left: 40px;
+}
+
+.admin-stats-graph-wrap {
+  position: relative;
+  top: 180px;
+  left: calc(50% - 500px);
+  width: 1000px;
+}
+
+.admin-stats-graph-tab span {
+  font-size: 16px;
+  border-right: 1px solid #999;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.admin-stats-graph-tab span:last-child {
+  border-right: none;
+}
+
+.admin-stats-graph {
+  width: 1000px;
+  height: 300px;
+  margin-top: 10px;
+  border: 1px solid #999;
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* reqeust-list */
+
+.request-search-input input {
+  height: 35px;
+}
+
+
+/* reqeust-add */
+
+#admin-req-add-system {
+  width: 220px;
+  border-right: 1px solid #999;
+}
+
+#admin-req-add-system + input {
+  width: 745px;
+}
+
+.req-add-input {
+  display: flex;
+}
+
+
+/* reqeust-detail */
+
+.req-fb-admin .req-fb-writer #delete-btn {
+  margin-left: 10px;
+}
+
+.req-fb-content-add > div {
+  justify-content: space-between;
+  display: flex;
+}
+
+.req-fb-content-add > div > div {
+  display: flex;
+}
+
+.req-fb-content-add > div > div > p {
+  display: flex;
+  height: 20px;
+  width: 150px;
+  margin-top: 20px;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.req-fb-content-add > div > p > input {
+  width: 20px;
+  margin-right: 20px;
+}
+
+
+/* request-edit */

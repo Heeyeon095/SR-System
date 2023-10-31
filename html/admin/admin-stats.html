@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+</head>
+<body>
+  <header>
+    <div class="gnb-logo">logo</div>
+    <div class="gnb-login-mid">
+      <a>SR관리</a>
+      <a>
+        <ul class="gnb-nav">시스템관리
+          <li><a href="#">고객사 관리</a></li>
+          <li><a href="#">고객 관리</a></li>
+          <li><a href="#">관리자 관리</a></li>
+        </ul>
+      </a>
+      <a>통계</a>
+      <a>김고객님</a>
+    </div>
+    <div class="gnb-login-text">
+      <p class="gnb-login">로그인</p>
+      <p class="gnb-logout">로그아웃</p>
+    </div>
+  </header>
+
+
+  <form action="" id="admin-stats">
+
+    <div>
+      <label for="admin-stats-date">기간</label>
+      <p>
+        <input type="date" id="admin-stats-date">
+        ~
+        <input type="date" id="admin-stats-date2">
+      </p>
+    </div>
+
+    <div>
+      <label for="admin-stats-status">구분</label>
+      <p>
+        <select name="admin-stats-status" id="admin-stats-status">
+          <option value="" disabled selected>
+            선택
+          </option>
+          <option value="">요청건수</option>
+          <option value="">처리건수</option>
+          <option value="">미처리건수</option>
+        </select>
+        <button type="reset">리셋</button>
+        <button type="submit">검색</button>
+      </p>
+    </div>
+
+  </form>
+
+  <div class="admin-stats-graph-wrap">
+    <div class="admin-stats-graph-tab">
+      <span>일별</span>
+      <span>월별</span>
+      <span>연도별</span>
+    </div>
+
+    <div class="admin-stats-graph">그래프</div>
+  </div>
+
+</body>
+</html>
