@@ -327,34 +327,6 @@ form>div>* {
   border-bottom: none;
 }
 
-.page-on {
-  color: blue;
-  text-decoration: underline;
-}
-
-.request-list-page {
-  position: relative;
-  top: 180px;
-  text-align: center;
-}
-
-.request-list-page a {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-.request-list-page a:hover {
-  text-decoration: underline;
-}
-
-.request-list-page i:first-child {
-  color: #bbb;
-}
-
-.request-list-page i {
-  margin: 0 10px;
-}
-
 .request-list-add-btn {
   position: relative;
   top: 148px;

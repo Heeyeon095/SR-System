@@ -82,6 +82,7 @@ header {
   background-color: #fff;
   border: 2px solid #ddd;
   text-align: center;
+  cursor: pointer;
   line-height: 50px;
 }
 
@@ -110,6 +111,10 @@ header {
   display: none;
 }
 
+.gnb-login-mid a {
+  cursor: pointer;
+}
+
 .gnb-login-mid li {
   height: 40px;
   background-color: #eee;
@@ -123,4 +128,35 @@ header {
 
 .gnb-login-mid li:first-child {
   border-top: 1px solid #999;
+}
+
+
+/* pagenation */
+
+.page-on {
+  color: blue;
+  text-decoration: underline;
+}
+
+.list-page {
+  position: relative;
+  top: 180px;
+  text-align: center;
+}
+
+.list-page a {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.list-page a:hover {
+  text-decoration: underline;
+}
+
+.list-page i:first-child {
+  color: #bbb;
+}
+
+.list-page i {
+  margin: 0 10px;
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>client-add</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+</head>
+<body>
+  <header>
+    <div class="gnb-logo">logo</div>
+    <div class="gnb-login-mid">
+      <a>SR관리</a>
+      <a>
+        <ul class="gnb-nav">시스템관리
+          <li><a href="#">고객사 관리</a></li>
+          <li><a href="#">고객 관리</a></li>
+          <li><a href="#">관리자 관리</a></li>
+        </ul>
+      </a>
+      <a>통계</a>
+      <a>김고객님</a>
+    </div>
+    <div class="gnb-login-text">
+      <p class="gnb-login">로그인</p>
+      <p class="gnb-logout">로그아웃</p>
+    </div>
+  </header>
+
+
+  <form class="client-add-wrap">
+    
+    <div>
+      <div class="client-add-title">
+        <p>상호명*</p>
+        <p>약어</p>
+        <p>대표자명</p>
+        <p>연락처</p>
+        <p>주소</p>
+        <p>상태</p>
+      </div>
+      <div class="client-add-input">
+        <p>
+          <input type="text" placeholder="상호명을 입력해주세요.">
+        </p>
+        <p>
+          <input type="text" placeholder="영문대문자 1~3글자로 입력해주세요.">
+        </p>
+        <p>
+          <input type="text" placeholder="대표자명을 입력해주세요.">
+        </p>
+        <p>
+          <input type="text" placeholder="대표자 연락처를 입력해주세요.">
+        </p>
+        <p>
+          <input type="text" placeholder="회사 주소를 입력해주세요.">
+        </p>
+        <p>
+          <input type="radio" id="client-add-status-yes" name="client-add-status" checked>
+          <label for="client-add-status-yes">사용</label>
+          <input type="radio" id="client-add-status-no" name="client-add-status">
+          <label for="client-add-status-no">미사용</label>
+        </p>
+      </div>
+    </div>
+
+    <button type="submit" >등록</button>
+
+  </form>
+
+</body>
+</html>

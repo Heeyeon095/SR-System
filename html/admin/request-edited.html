@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>request-edited</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/customer.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+</head>
+<body>
+  <header>
+    <div class="gnb-logo">logo</div>
+    <div class="gnb-login-mid">
+      <p>SR관리</p>
+      <p>김고객님</p>
+    </div>
+    <div class="gnb-login-text">
+      <p class="gnb-login">로그인</p>
+      <p class="gnb-logout">로그아웃</p>
+    </div>
+  </header>
+
+  <div class="req-add-wrap">
+
+    <div class="req-add-top">
+
+      <div>
+        <div class="req-add-title2">
+          <p>[시스템이름] 제목영역 입니다. (231027수정)</p>
+          <div>글번호 1234</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="req-add-title">
+          <p>주식회사 테스트</p>
+        </div>
+        <div class="req-add-input3">
+          <div>작성자(user1234@gmail.com)</div>
+          <div></div>
+        </div>
+        <div class="req-add-title">
+          <p></p>
+        </div>
+        <div class="req-add-input3">
+          <p>마지막 업데이트 23.10.27</p>
+          <p>등록일 23.10.27 12:53</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="req-add-title">
+          <p>상태</p>
+        </div>
+        <div class="req-add-input2">
+          <p>요청</p>
+        </div>
+        <div class="req-add-title">
+          <p>상태</p>
+        </div>
+        <div class="req-add-input2">
+          <p></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="req-add-title">
+          <p>우선순위</p>
+        </div>
+        <div class="req-add-input2">
+          <p>보통</p>
+        </div>
+        <div class="req-add-title">
+          <p>담당자</p>
+        </div>
+        <div class="req-add-input2">
+          <p>관리자(manage1234@naver.com)</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="req-add-title">
+          <p>요청기한</p>
+        </div>
+        <div class="req-add-input2">
+          <p>23.10.27</p>
+        </div>
+        <div class="req-add-title">
+          <p>시작일</p>
+        </div>
+        <div class="req-add-input2">
+          <p>23.10.27</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="req-add-title">
+          <p></p>
+        </div>
+        <div class="req-add-input3">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="req-add-title">
+          <p>완료일</p>
+        </div>
+        <div class="req-add-input2">
+          <p></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="req-add-mid">
+      <p>내용 영역입니다.</p>
+    </div>
+
+    <div class="req-add-bottom">
+      <button type="button" id="cancel-btn">수정</button>
+    </div>
+
+  </div>
+
+  </div>
+
+  <div class="req-fb-wrap">
+
+    <div class="req-fb-admin">
+      <div class="req-fb-writer">
+        <p>관리자(email@ehd.kr)</p>
+        <p></p>
+      </div>
+      <div class="req-fb-content">
+        <p>피드백 내용입니다.</p>
+      </div>
+      <div class="req-fb-date">
+        <p>등록일 23.10.27</p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="req-fb-customer">
+      <div class="req-fb-writer">
+        <p></p>
+        <p><button type="button" id="delete-btn">삭제</button> 작성자(email@ehd.kr)</p>
+      </div>
+      <div class="req-fb-content">
+        <p>피드백 내용입니다.</p>
+      </div>
+      <div class="req-fb-date">
+        <p></p>
+        <p>등록일 23.10.27</p>
+      </div>
+    </div>
+
+    <section class="req-edit-alert">
+      <p>2023.10.27 요청사항이 변경되었습니다.</p>
+      <p>2023.10.27 파일이 변경되었습니다.</p>
+    </section>
+
+    <div class="req-fb-admin">
+      <div class="req-fb-writer">
+        <p>관리자(email@ehd.kr)</p>
+        <p></p>
+      </div>
+      <div class="req-fb-content">
+        <p>피드백 내용입니다.</p>
+      </div>
+      <div class="req-fb-date">
+        <p>등록일 23.10.27</p>
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+  
+  <form action="" class="req-fb-content-add">
+    <input type="text"></input>
+    <button type="submit" id="add-btn">등록</button>
+  </form>
+
+</body>
+</html>
