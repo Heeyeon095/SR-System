@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>admin-edit</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+</head>
+<body>
+  <header>
+    <div class="gnb-logo">logo</div>
+    <div class="gnb-login-mid">
+      <a>SR관리</a>
+      <a>
+        <ul class="gnb-nav">시스템관리
+          <li><a href="#">고객사 관리</a></li>
+          <li><a href="#">고객 관리</a></li>
+          <li><a href="#">관리자 관리</a></li>
+        </ul>
+      </a>
+      <a>통계</a>
+      <a>김고객님</a>
+    </div>
+    <div class="gnb-login-text">
+      <p class="gnb-login">로그인</p>
+      <p class="gnb-logout">로그아웃</p>
+    </div>
+  </header>
+
+
+  <div class="admin-edit-wrap">
+
+    <div class="admin-edit-info">
+
+      <div>
+        <div class="admin-edit-title">
+          <p>이름*</p>
+        </div>
+        <div class="admin-edit-input">
+          <p>관리자</p>
+        </div>
+      </div>
+      
+      <div>
+        <div class="admin-edit-title">
+          <p>이메일*</p>
+        </div>
+        <div class="admin-edit-input">
+          <p>manage@naver.com</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="admin-edit-title">
+          <p>연락처</p>
+        </div>
+        <div class="admin-edit-input admin-edit-input2">
+          <select name="" id="">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="012">012</option>
+            <option value="013">013</option>
+            <option value="014">014</option>
+            <option value="015">015</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select>
+          <input type="number">
+          <input type="number">
+        </div>
+      </div>
+
+      <div>
+        <div class="admin-edit-title">
+          <p>직급</p>
+        </div>
+        <div class="admin-edit-input">
+          <input type="text" placeholder="직급을 입력하세요.">
+        </div>
+      </div>
+
+      <div>
+        <div class="admin-edit-title">
+          <p>직책</p>
+        </div>
+        <div class="admin-edit-input">
+          <input type="text" placeholder="직책을 입력하세요.">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="admin-edit-list">
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>사명</th>
+            <th>담당 시스템</th>
+            <th>직책</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>주식회사 테스트</td>
+            <td>SR 관리 시스템</td>
+            <td>부</td>
+          </tr>
+          <tr>
+            <td>주식회사 테스트</td>
+            <td>운영 관리 시스템</td>
+            <td>정</td>
+          </tr>
+          <tr>
+            <td>.</td>
+            <td>.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>.</td>
+            <td>.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>.</td>
+            <td>.</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

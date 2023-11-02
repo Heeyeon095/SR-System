@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>customer-edit</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+</head>
+<body>
+  <header>
+    <div class="gnb-logo">logo</div>
+    <div class="gnb-login-mid">
+      <a>SR관리</a>
+      <a>
+        <ul class="gnb-nav">시스템관리
+          <li><a href="#">고객사 관리</a></li>
+          <li><a href="#">고객 관리</a></li>
+          <li><a href="#">관리자 관리</a></li>
+        </ul>
+      </a>
+      <a>통계</a>
+      <a>김고객님</a>
+    </div>
+    <div class="gnb-login-text">
+      <p class="gnb-login">로그인</p>
+      <p class="gnb-logout">로그아웃</p>
+    </div>
+  </header>
+
+
+  <form class="customer-edit">
+
+    <div>
+      <p class="customer-edit-title">소속</p>
+      <p class="customer-edit-input2">
+        <input type="text" readonly placeholder="주식회사 테스트">
+        <button>선택</button>
+      </p>
+    </div>
+
+    <div>
+      <p class="customer-edit-title">이메일</p>
+      <p class="customer-edit-input">
+        user1234@naver.com
+      </p>
+    </div>
+
+    <div>
+      <p class="customer-edit-title">이름</p>
+      <p class="customer-edit-input">
+        <input type="text">
+      </p>
+    </div>
+
+    <div>
+      <p class="customer-edit-title">연락처</p>
+      <p class="customer-edit-input3">
+        <select name="" id="">
+          <option value="010">010</option>
+          <option value="011">011</option>
+          <option value="012">012</option>
+          <option value="013">013</option>
+          <option value="014">014</option>
+          <option value="015">015</option>
+          <option value="016">016</option>
+          <option value="017">017</option>
+          <option value="018">018</option>
+          <option value="019">019</option>
+        </select>
+        <input type="number">
+        <input type="number">
+      </p>
+    </div>
+
+    <div>
+      <p class="customer-edit-title">비밀번호</p>
+      <p class="customer-edit-input4">
+        <input type="password" placeholder="영문/숫자/특수문자 중 두가지 이상 조합으로 10~16자리여야 합니다.">
+      </p>
+    </div>
+
+    <div>
+      <p class="customer-edit-title">비밀번호 확인</p>
+      <p class="customer-edit-input4">
+        <input type="password">
+      </p>
+    </div>
+
+    <div>
+      <p class="customer-edit-title">상태</p>
+      <p class="customer-edit-input">
+        <select name="" id="">
+          <option value="">신청</option>
+          <option value="">정상</option>
+          <option value="">정지</option>
+        </select>
+      </p>
+    </div>
+
+    <button type="submit">수정</button>
+
+  </form>
+
+</body>
+</html>
