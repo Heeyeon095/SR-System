@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join-agree</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/agree.css">
+</head>
+<body>
+
+  <div class="bg">
+    <div class="agree-wrap">
+      <div class="agree">
+        <section>
+          <span>이용약관[필수]</span>
+          <div>
+            <label for="agree-box">동의합니다</label>
+            <input type="checkbox" id="agree-box" name="agree">
+          </div>
+        </section>
+        <div class="agree-con">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, commodi? Error quod omnis ipsum itaque officiis facere doloribus, minima ad laudantium impedit harum dicta suscipit quis, sequi consequatur numquam explicabo.
+          <br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, commodi? Error quod omnis ipsum itaque officiis facere doloribus, minima ad laudantium impedit harum dicta suscipit quis, sequi consequatur numquam explicabo.
+          <br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, commodi? Error quod omnis ipsum itaque officiis facere doloribus, minima ad laudantium impedit harum dicta suscipit quis, sequi consequatur numquam explicabo.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, commodi? Error quod omnis ipsum itaque officiis facere doloribus, minima ad laudantium impedit harum dicta suscipit quis, sequi consequatur numquam explicabo.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, commodi? Error quod omnis ipsum itaque officiis facere doloribus, minima ad laudantium impedit harum dicta suscipit quis, sequi consequatur numquam explicabo.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, commodi? Error quod omnis ipsum itaque officiis facere doloribus, minima ad laudantium impedit harum dicta suscipit quis, sequi consequatur numquam explicabo.
+        </div>
+      </div>
+      <div class="agree">
+        <section>
+          <span>개인정보 수집 이용 동의[필수]</span>
+          <div>
+            <label for="agree-box2">동의합니다</label>
+            <input type="checkbox" id="agree-box2" name="agree">
+          </div>
+        </section>
+        <div class="agree-con">
+          한글은 어떻게 보이나? consectetur adipisicing elit.
+          <br>
+          Numquam voluptate odio natus assumenda provident beatae doloremque neque error eum nam rem dolorum ea ipsum libero repellat, ipsa dolores vel eaque.
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate odio natus assumenda provident beatae doloremque neque error eum nam rem dolorum ea ipsum libero repellat, ipsa dolores vel eaque.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <br>
+          Numquam voluptate odio natus assumenda provident beatae doloremque neque error eum nam rem dolorum ea ipsum libero repellat, ipsa dolores vel eaque.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate odio natus assumenda provident beatae doloremque neque error eum nam rem dolorum ea ipsum libero repellat, ipsa dolores vel eaque.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate odio natus assumenda provident beatae doloremque neque error eum nam rem dolorum ea ipsum libero repellat, ipsa dolores vel eaque.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate odio natus assumenda provident beatae doloremque neque error eum nam rem dolorum ea ipsum libero repellat, ipsa dolores vel eaque.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate odio natus assumenda provident beatae doloremque neque error eum nam rem dolorum ea ipsum libero repellat, ipsa dolores vel eaque.
+        </div>
+      </div>
+      <div class="all-agree">
+        <p>
+          <label for="all-agree">위의 모든 약관에 동의합니다.</label>
+          <input type="checkbox" id="all-agree">
+        </p>
+        <p>
+          <button type="button" class="red-btn">취소</button>
+          <button type="submit" class="blue-btn">동의</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    document.querySelector('#all-agree').addEventListener('click', function () {
+    
+      if (document.getElementById("all-agree").checked == true) {
+        
+        for (var i = 0; i < 3; i++) document.getElementsByName("agree")[i].checked = true;
+        
+      } else if (document.getElementById('all-agree').checked == false) {
+    
+        for (var i = 0; i < 3; i++) document.getElementsByName('agree')[i].checked = false;
+    
+      };
+    
+    });
+    
+    </script>
+
+</body>
+</html>

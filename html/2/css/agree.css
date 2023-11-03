@@ -1,0 +1,62 @@
+
+
+
+/* Join-agree */
+
+.agree-wrap {
+  position: relative;
+  top: 50%;
+  left: calc(50% - 400px);
+  transform: translateY(-50%);
+  width: 800px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 100px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.agree:nth-child(2) {
+  margin-top: 50px;
+}
+
+.agree > section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.agree-wrap > section > div {
+  display: flex;
+}
+
+.agree-wrap > section input {
+  display: block;
+  width: 15px;
+  margin: 0 10px;
+}
+
+.agree-con {
+  border: 2px solid #666;
+  padding: 20px;
+  max-height: 200px;
+  overflow-y: scroll;
+  border-radius: 5px;
+  color: #616d86;
+  font-size: 16px;
+}
+
+.all-agree {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.all-agree p:last-child {
+  margin-top: 30px;
+}
+
+.all-agree button {
+  margin: 0 30px;
+}

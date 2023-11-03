@@ -17,8 +17,9 @@
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  height: 30px;
-  width: 500px;
+  height: 45px;
+  background-color: #fff;
+  width: 530px;
   display: block;
   margin: 20px 0;
 }
@@ -27,9 +28,13 @@
   height: 55px;
   width: 530px;
   font-size: 1.1rem;
-  background-color: #ddd;
+  background-color: #eee;
   font-weight: bold;
   text-align: center;
+}
+
+#login-form button:hover {
+  background-color: #aaa;
 }
 
 .login-bg {
@@ -130,50 +135,51 @@ form>div>* {
 
 .join-info-label-wrap label {
   display: block;
-  margin-top: 41px;
+  height: 70px;
+  line-height: 70px;
 }
 
 .join-info-input-wrap {
   width: 500px;
-  padding-top: 25px;
+  line-height: 70px;
 }
 
-.join-info-input-wrap>* {
-  margin: 4px 0;
-}
-
-.join-info-input-wrap input {
-  margin-top: 5px;
-  margin-bottom: 20px;
+.join-info-input-wrap > * {
+  height: 70px;
 }
 
 .join-info-input-wrap input[type=text],
 .join-info-input-wrap input[type=password] {
-  height: 20px;
+  height: 45px;
   width: 350px;
+  background-color: #fff;
 }
 
 .join-info-input-wrap>div {
   display: flex;
   justify-content: space-between;
+  padding-top: 13px;
 }
 
 .join-info-input-wrap button {
-  margin-top: 5px;
   margin-bottom: 20px;
   display: block;
   width: 105px;
+  height: 45px;
 }
 
 .join-info-input-wrap select {
-  margin-top: 5px;
-  margin-bottom: 20px;
   width: 110px;
   padding: 0 10px;
+  display: block;
+  height: 45px;
 }
 
 .join-info-input-wrap input[type=number] {
+  background-color: #fff;
   width: 150px;
+  display: block;
+  height: 45px;
 }
 
 #join-form-submit {
@@ -264,7 +270,7 @@ form>div>* {
 
 .request-search-input input {
   display: block;
-  height: 15px;
+  height: 35px;
   width: 200px;
   margin-top: 4px;
   margin-right: 10px;
@@ -275,6 +281,7 @@ form>div>* {
 .request-search-input button,
 .request-search-input select {
   margin-right: 10px;
+  height: 35px;
 }
 
 .request-search-input select {
@@ -285,7 +292,6 @@ form>div>* {
 }
 
 .request-search-input button {
-  height: 37px;
   width: 120px;
   margin-top: 4px;
   line-height: 10px;
@@ -599,8 +605,8 @@ form>div>* {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  left: calc(50% - 500px);
-  width: 1000px;
+  left: calc(50% - 400px);
+  width: 800px;
   text-align: right;
   font-size: 16px;
 }
@@ -646,7 +652,7 @@ form>div>* {
 .customer-page-phone {
   display: flex;
   justify-content: space-between;
-  width: 65%;
+  width: 80%;
 }
 
 .customer-page-phone select {
