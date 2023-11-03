@@ -77,7 +77,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .btn {
-  background-color: #ecf0fa;
+  border: 1px solid #ccd1e7;
+  background-color: #f5f7fd;
 }
 
 .btn:hover {
@@ -212,7 +213,7 @@ h1 {
   width: 180px;
   line-height: 45px;
   padding-left: 10px;
-  background-color: #ecf0fa;
+  background-color: #f5f7fd;
   border: 1px solid #ccd1e7;
   border-radius: 10px;
 }
