@@ -35,7 +35,7 @@ button {
 input, select {
   border-radius: 10px;
   border: none;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   padding: 0 10px;
   font-size: 16px;
   border: 1px solid #d9dadf;
@@ -76,13 +76,23 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: rgb(60, 71, 133);
 }
 
+.purple-btn {
+  background-color: rgb(133, 99, 187);
+  font-weight: bold;
+  color: #fff;
+}
+
+.purple-btn:hover {
+  background-color: rgb(92, 59, 136);
+}
+
 .btn {
   border: 1px solid #ccd1e7;
-  background-color: #f5f7fd;
+  background-color: #f5f5fa;
 }
 
 .btn:hover {
-  background-color: #ccd1e7;
+  background-color: #d6dbee;
 }
 
 .bg {
@@ -168,7 +178,7 @@ h1 {
 .login-wrap input {
   height: 45px;
   width: 400px;
-  background-color: #f0f0f1;
+  background-color: #f7f7f7;
 }
 
 .login-wrap button {
@@ -179,6 +189,14 @@ h1 {
   margin-top: 50px;
   font-size: 14px;
   text-decoration: underline;
+}
+
+.login-wrap h3:first-child {
+  margin-top: 120px;
+}
+
+.login-wrap h3 {
+  margin-top: 20px;
 }
 
 
@@ -243,4 +261,483 @@ h1 {
 
 .info-wrap > button {
   margin-top: 50px;
+}
+
+
+/* gnb */
+
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: #333;
+}
+
+header > div {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1800px;
+  min-width: 1000px;
+}
+
+.gnb-logo {
+  width: 15%;
+  text-align: center;
+}
+
+.gnb-mid {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d9dadf;
+  border-top: none;
+  border-bottom: none;
+  background-color: #f7f7f7;
+  padding: 0 20px;
+}
+
+.gnb-login {
+  width: 15%;
+  text-align: center;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+/* list */
+
+.list-search {
+  position: relative;
+  top: 50px;
+  left: calc(50% - 600px);
+  width: 1200px;
+  border: 1px solid #ccd1e7;
+  background-color: #f5f5fa;
+  border-radius: 5px;
+}
+
+.list-search > div {
+  display: flex;
+  height: 55px;
+  border-bottom: 1px solid #ccd1e7;
+}
+
+.list-search > div:last-child {
+  border-bottom: none;
+}
+
+.search-title {
+  width: 200px;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 55px;
+  border-right: 1px solid #ccd1e7;
+  font-weight: bold;
+}
+
+.search-input {
+  padding: 5px 10px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.list-search > div:first-child .search-input {
+  border-top-right-radius: 10px;
+}
+
+.list-search > div:last-child .search-input {
+  border-bottom-right-radius: 10px;
+}
+
+.search-input input {
+  width: 200px;
+}
+
+.search-select {
+  width: 200px;
+  margin-right: 15px;
+}
+
+.search-input1 {
+  display: flex;
+}
+
+.search-input1 input {
+  width: 420px;
+  margin-right: 270px;
+}
+
+.search-input1 button {
+  margin: 0 3px;
+}
+
+.list-wrap {
+  position: relative;
+  left: calc(50% - 600px);
+  top: 100px;
+  width: 1200px;
+  text-align: right;
+}
+
+.list {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.list thead tr {
+  border: 1px solid #ccd1e7;
+  background-color: #f5f5fa;
+  height: 50px;
+}
+
+.list tbody tr {
+  height: 50px;
+  border: 1px solid #ccd1e7;
+}
+
+.list-title {
+  max-width: 335px;
+  width: 335px;
+}
+
+.list-title a {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+/* pagenation */
+
+.page-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.page {
+  position: relative;
+  left: calc(50% - 175px);
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.page a {
+  padding: 0 5px;
+}
+
+.page a.on {
+  color: blue;
+  text-decoration: underline;
+}
+
+.page a:hover {
+  text-decoration: underline;
+}
+
+.page-wrap button {
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+
+.page i {
+  margin: 0 10px;
+}
+
+
+/* detail */
+
+.detail-wrap {
+  position: relative;
+  top: 50px;
+  left: calc(50% - 600px);
+  width: 1200px;
+  border: 1px solid #ccd1e7;
+  border-bottom: none;
+}
+
+.detail-wrap > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd1e7;
+  height: 45px;
+  line-height: 45px;
+}
+
+.detail-wrap > div:last-child {
+  border-bottom: none;
+}
+
+.detail-wrap .detail-input-title {
+  width: 950px;
+  padding: 0;
+}
+
+.detail-wrap .detail-input-title input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  border: none;
+  line-height: 45px;
+}
+
+.detail-box {
+  width: 250px;
+  border-right: 1px solid #ccd1e7;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.detail-wrap .detail-box2{
+  padding: 0;
+  line-height: initial;
+}
+
+.detail-box2 select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0px;
+}
+
+.detail-wrap > div > * {
+  padding-left: 10px;
+}
+
+.detail-wrap > div > .detail-box:nth-child(3) {
+  border-left: 1px solid #ccd1e7;
+}
+
+.detail-wrap .detail-input {
+  width: 350px;
+  padding: 0;
+}
+
+.detail-input select,
+.detail-input input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0px;
+}
+
+.detail-input2 {
+  display: flex;
+}
+
+.detail-input2 p:first-child {
+  width: 50%;
+  border-right: 1px solid #ccd1e7;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #616d86;
+}
+
+.detail-input2 p:last-child {
+  width: 50%;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #616d86;
+}
+
+.detail-wrap .detail-con {
+  width: 1200px;
+  height: 500px;
+  margin-top: -1px;
+  margin-left: -1px;
+  overflow: hidden;
+  color: #333;
+}
+
+.detail-wrap > div > input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-top: -1px;
+  line-height: 45px;
+  border: none;
+  border-radius: 0px;
+}
+
+.ck-editor__editable {
+  display: block;
+  width: 1200px;
+  height: 460px;
+  line-height: 30px;
+}
+
+.detail-btn {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-left: -1px;
+  border: 1px solid #fff;
+}
+
+.detail-btn button {
+  padding: 0;
+}
+
+.file-msg {
+  position: absolute;
+  z-index: -10;
+  top: 590px;
+  left: 10px;
+  background-color: #616d86;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 20px;
+  border-radius: 5px;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.file-input:hover .file-msg {
+  top: 580px;
+  opacity: 1;
+  z-index: 10;
+}
+
+
+/* list-detail */
+
+.detail-box3 {
+  width: 1025px;
+}
+
+.detail-box4 {
+  width: 175px;
+  text-align: right;
+  color: #616d86;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.detail-input > p {
+  padding-left: 10px;
+}
+
+.detail-bg {
+  background-color: #f5f5fa;
+}
+
+.file-input p {
+  color: #3596f0;
+}
+
+.hide {
+  opacity: 0;
+  cursor:default;
+}
+
+
+/* feedback */
+
+.fb-wrap {
+  position: relative;
+  top: 200px;
+  left: calc(50% - 600px);
+  width: 1200px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.fb-wrap > div {
+  padding: 20px;
+}
+
+.fb-wrap > div.on .fb-title {
+  color: #8357eb;
+}
+
+.fb-title {
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.fb-title a {
+  float: right;
+  margin-left: 10px;
+}
+
+.fb-admin .fb-con {
+  display: inline-block;
+  width: fit-content;
+  min-width: 350px;
+  background-color: #f5f5fa;
+  border: 1px solid #b9c6d4;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.fb-con p {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccd1e7;
+}
+
+.fb-con h5 {
+  color: #616d86;
+  font-weight: 400;
+}
+
+.fb-customer {
+  text-align: right;
+}
+
+.fb-customer .fb-con {
+  display: inline-block;
+  width: fit-content;
+  min-width: 350px;
+  background-color: rgb(252, 247, 230);
+  border: 1px solid #ddbdb9;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.fb-add {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fb-add textarea {
+  width: 1000px;
+  border: 2px solid #ccd1e7;
+  font-size: 16px;
+  height: 100px;
+  line-height: 28px;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.fb-add button {
+  height: 100px;
 }
