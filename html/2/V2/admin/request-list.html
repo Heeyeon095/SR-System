@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request-list</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'/>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <header>
+
+    <div>
+      <div class="gnb-logo">
+        <a href="">로고</a>
+      </div>
+      <ul class="gnb-mid">
+        <li><a href="">SR관리</a></li>
+        <li class="gnb-nav">시스템 관리
+          <ul class="gnb-menu">
+            <li><a href="">고객사 관리</a></li>
+            <li><a href="">고객 관리</a></li>
+            <li><a href="">관리자 관리</a></li>
+          </ul>
+        </li>
+        <li><a href="">통계</a></li>
+        <li>이고객 님</li>
+      </ul>
+      <div class="gnb-login">
+        <a href="">로그아웃</a>
+      </div>
+    </div>
+
+  </header>
+
+
+  <form class="list-search">
+    <div>
+      <p class="search-title">기간</p>
+      <p class="search-input">
+        <input type="date" value="1999-12-31">
+        ~
+        <input type="date" value="2000-01-01">
+      </p>
+    </div>
+    <div>
+      <p class="search-title">구분</p>
+      <p class="search-input">
+        <select name="" id="" class="search-select">
+          <option value="" disabled selected>선택</option>
+        </select>
+        <select name="" id="" class="search-select">
+          <option value="" disabled selected>선택</option>
+        </select>
+        <select name="" id="" class="search-select">
+          <option value="" disabled selected>선택</option>
+          <option value="">요청</option>
+          <option value="">확인</option>
+          <option value="">재검토</option>
+          <option value="">접수</option>
+          <option value="">처리중</option>
+          <option value="">완료</option>
+          <option value="">재처리</option>
+        </select>
+      </p>
+    </div>
+    <div>
+      <p class="search-title">검색어</p>
+      <p class="search-input search-input1">
+        <input type="text" placeholder="검색어를 입력하세요">
+        <button type="reset" class="btn">리셋</button>
+        <button type="submit" class="purple-btn">검색</button>
+      </p>
+    </div>
+  </form>
+
+  <div class="list-wrap">
+    <button class="excel-btn btn">
+      엑셀 <i class="fa-solid fa-download"></i>
+    </button>
+    <table class="list">
+      <thead>
+        <tr>
+          <th>SR<br/>번호</th>
+          <th class="list-company">사명</th>
+          <th>시스템</th>
+          <th class="list-title">제목</th>
+          <th>작성자</th>
+          <th>등록일</th>
+          <th>수정일</th>
+          <th>요청여부</th>
+          <th>처리여부</th>
+          <th>담당자</th>
+          <th>처리일</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="list-SR">1234567891234569789</td>
+          <td class="list-company">주식회사 테스트 긴 이름은 어떻게? 하지요?</td>
+          <td>관리시스템</td>
+          <td class="list-title"><a href="">세상에서 제일 긴 타이틀 제목으로 긴 글 확인해보기</a></td>
+          <td>홍길동</td>
+          <td>2023-11-06</td>
+          <td>2023-11-06</td>
+          <td>요청</td>
+          <td>접수</td>
+          <td>이담당</td>
+          <td>2023-11-06</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company">주식회사 테스트</td>
+          <td>관리시스템</td>
+          <td class="list-title"><a href="">일이삼사오육칠발구십</a></td>
+          <td>홍길동</td>
+          <td>2023-11-06</td>
+          <td>2023-11-06</td>
+          <td>요청</td>
+          <td>접수</td>
+          <td>이담당</td>
+          <td>2023-11-06</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company">주식회사 테스트</td>
+          <td>관리시스템</td>
+          <td class="list-title"><a href="">일이삼사오육칠발구십일이삼사오육칠팔구십아</a></td>
+          <td>홍길동</td>
+          <td>2023-11-06</td>
+          <td>2023-11-06</td>
+          <td>요청</td>
+          <td>접수</td>
+          <td>이담당</td>
+          <td>2023-11-06</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company"></td>
+          <td class="list-title"><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company"></td>
+          <td class="list-title"><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company"></td>
+          <td class="list-title"><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company"></td>
+          <td class="list-title"><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company"></td>
+          <td class="list-title"><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company"></td>
+          <td class="list-title"><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="list-company"></td>
+          <td class="list-title"><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    <div class="page-wrap">
+      <div class="page">
+        <i class="fa-solid fa-chevron-left"></i>
+        <a href="" class="on">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <a href="">7</a>
+        <a href="">8</a>
+        <a href="">9</a>
+        <a href="">10</a>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <button class="blue-btn">등록</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

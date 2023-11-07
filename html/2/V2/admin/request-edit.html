@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request-add</title>
+  <title>Request-edit</title>
   <link rel="stylesheet" href="../../css/style.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
@@ -18,6 +18,14 @@
       </div>
       <ul class="gnb-mid">
         <li><a href="">SR관리</a></li>
+        <li class="gnb-nav">시스템 관리
+          <ul class="gnb-menu">
+            <li><a href="">고객사 관리</a></li>
+            <li><a href="">고객 관리</a></li>
+            <li><a href="">관리자 관리</a></li>
+          </ul>
+        </li>
+        <li><a href="">통계</a></li>
         <li>이고객 님</li>
       </ul>
       <div class="gnb-login">
@@ -30,55 +38,78 @@
 
   <form class="detail-wrap">
 
+
     <div class="detail-title">
-      <div class="detail-box detail-box2">
-        <select name="" id="">
-          <option value="" disabled selected>시스템선택</option>
-        </select>
+      <div class="detail-box detail-box3">
+        <input type="text" value="[관리시스템] 제목 영역입니다">
       </div>
-      <div class="detail-input-title">
-        <input type="text" placeholder="제목을 입력해주세요"></input>
+      <div class="detail-box4">
+        <p>TST-MNG-00001</p>
       </div>
     </div>
 
+
     <div>
-      <div class="detail-box">작성자</div>
+      <div class="detail-box">주식회사 테스트</div>
       <div class="detail-input detail-input2">
-        <p></p>
+        <p>작성자(user1234@naver.com)</p>
         <p></p>
       </div>
       <div class="detail-box"></div>
       <div class="detail-input detail-input2">
         <p></p>
-        <p></p>
-      </div>
-    </div>
-
-    <div>
-      <div class="detail-box">우선순위</div>
-      <div class="detail-input">
-        <select name="" id="">
-          <option value="" disabled selected>우선순위선택</option>
-        </select>
-      </div>
-      <div class="detail-box">완료기한</div>
-      <div class="detail-input">
-        <input type="date">
+        <p>등록일 23-11-07 14:48</p>
       </div>
     </div>
 
     <div>
       <div class="detail-box">요청여부</div>
       <div class="detail-input">
+        <p>요청</p>
+      </div>
+      <div class="detail-box">처리여부</div>
+      <div class="detail-input">
         <select name="" id="">
-          <option value="" selected>요청</option>
-          <option value="">확인</option>
-          <option value="">재검토</option>
+          <option value="" disabled selected>선택</option>
+        </select></div>
+    </div>
+
+    <div>
+      <div class="detail-box">우선순위</div>
+      <div class="detail-input">
+        <p>보통</p>
+      </div>
+      <div class="detail-box">담당자</div>
+      <div class="detail-input">
+        <select name="" id="">
+          <option value="" disabled selected>선택</option>
         </select>
       </div>
-      <div class="detail-box"></div>
-      <div class="detail-input"></div>
     </div>
+
+    <div>
+      <div class="detail-box">요청기한</div>
+      <div class="detail-input">
+        <p>23-11-07</p>
+      </div>
+      <div class="detail-box">시작일</div>
+      <div class="detail-input">
+        <input type="date">
+      </div>
+    </div>
+
+    <div>
+      <div class="detail-box"></div>
+      <div class="detail-input detail-input2">
+        <p></p>
+        <p></p>
+      </div>
+      <div class="detail-box">완료일</div>
+      <div class="detail-input">
+        <input type="date">
+      </div>
+    </div>
+
 
     <div class="detail-con">
       <textarea name="req-content" id="editor"></textarea>
@@ -92,8 +123,8 @@
     </div>
 
     <div class="detail-btn">
-      <button type="button" class="red-btn">취소</button>
-      <button type="submit" class="blue-btn">등록</button>
+      <button class="hide"></button>
+      <button type="submit" class="blue-btn">수정</button>
     </div>
 
   </form>

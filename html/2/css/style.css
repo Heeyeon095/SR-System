@@ -170,6 +170,10 @@ h1 {
   font-size: 2rem;
 }
 
+.login-wrap > h5 {
+  font-weight: 400;
+}
+
 .login-wrap > p {
   height: 70px;
   line-height: 70px;
@@ -267,12 +271,14 @@ h1 {
 /* gnb */
 
 header {
+  position: relative;
   width: 100%;
   height: 50px;
   line-height: 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   color: #333;
+  z-index: 99999;
 }
 
 header > div {
@@ -298,7 +304,26 @@ header > div {
   border-top: none;
   border-bottom: none;
   background-color: #f7f7f7;
+  padding: 0 50px;
+}
+
+.gnb-menu {
+  position: absolute;
+  height: 0px;
+  border: 1px solid #d9dadf;
+  background-color: #f7f7f7;
   padding: 0 20px;
+  margin-left: -20px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.gnb-nav {
+  cursor: pointer;
+}
+
+.gnb-nav:hover .gnb-menu {
+  height: 160px;
 }
 
 .gnb-login {
@@ -319,7 +344,6 @@ header a:hover {
   left: calc(50% - 600px);
   width: 1200px;
   border: 1px solid #ccd1e7;
-  background-color: #f5f5fa;
   border-radius: 5px;
 }
 
@@ -339,12 +363,22 @@ header a:hover {
   padding-left: 20px;
   line-height: 55px;
   border-right: 1px solid #ccd1e7;
+  background-color: #f5f5fa;
   font-weight: bold;
 }
 
+.list-search > div:first-child .search-title {
+  border-top-left-radius: 5px;
+}
+
+.list-search > div:last-child .search-title {
+  border-bottom-left-radius: 5px;
+}
+
 .search-input {
+  position: relative;
+  width: 1000px;
   padding: 5px 10px;
-  width: 100%;
   background-color: #fff;
 }
 
@@ -378,6 +412,21 @@ header a:hover {
   margin: 0 3px;
 }
 
+.search-input2 button {
+  margin-left: 140px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #fff;
+  padding-top: 5px;
+}
+
 .list-wrap {
   position: relative;
   left: calc(50% - 600px);
@@ -404,16 +453,48 @@ header a:hover {
   border: 1px solid #ccd1e7;
 }
 
+.list tbody tr td {
+  width: 100px;
+  color: #616d86;
+  padding: 0 10px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.list-SR {
+  width: 100px;
+  max-width: 100px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.list-company {
+  width: 120px;
+  max-width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .list-title {
-  max-width: 335px;
-  width: 335px;
+  max-width: 300px;
+  width: 300px;
+}
+
+.list-title a:hover {
+  text-decoration: underline;
 }
 
 .list-title a {
   width: 100%;
+  height: 50px;
+  line-height: 50px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: #333;
+  font-weight: bold;
 }
 
 
@@ -496,12 +577,39 @@ header a:hover {
   line-height: 45px;
 }
 
+.detail-wrap .detail-input-title2 {
+  width: 950px;
+  display: flex;
+  padding: 0;
+}
+
+.detail-wrap .detail-input-title2 select {
+  width: 25%;
+  height: 100%;
+  display: block;
+  border: none;
+  border-radius: 0px;
+  border-right: 1px solid #ccd1e7;
+}
+
+.detail-wrap .detail-input-title2 input {
+  width: 75%;
+  height: 100%;
+  border: none;
+  display: block;
+  border-radius: 0px;
+}
+
 .detail-box {
   width: 250px;
   border-right: 1px solid #ccd1e7;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.detail-box span {
+  color: #616d86;
 }
 
 .detail-wrap .detail-box2{
@@ -550,6 +658,9 @@ header a:hover {
   padding-right: 10px;
   font-size: 14px;
   color: #616d86;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .detail-input2 p:last-child {
@@ -558,6 +669,9 @@ header a:hover {
   padding-right: 10px;
   font-size: 14px;
   color: #616d86;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .detail-wrap .detail-con {
@@ -601,7 +715,7 @@ header a:hover {
 .file-msg {
   position: absolute;
   z-index: -10;
-  top: 590px;
+  top: 650px;
   left: 10px;
   background-color: #616d86;
   color: #fff;
@@ -613,7 +727,7 @@ header a:hover {
 }
 
 .file-input:hover .file-msg {
-  top: 580px;
+  top: 620px;
   opacity: 1;
   z-index: 10;
 }
@@ -623,6 +737,12 @@ header a:hover {
 
 .detail-box3 {
   width: 1025px;
+}
+
+.detail-box3 input {
+  width: 100%;
+  border-radius: 0px;
+  border: none;
 }
 
 .detail-box4 {
@@ -643,6 +763,11 @@ header a:hover {
 
 .file-input p {
   color: #3596f0;
+  cursor: pointer;
+}
+
+.file-input p:hover {
+  text-decoration: underline;
 }
 
 .hide {
@@ -681,6 +806,10 @@ header a:hover {
   margin-left: 10px;
 }
 
+.fb-title a:hover {
+  text-decoration: underline;
+}
+
 .fb-admin .fb-con {
   display: inline-block;
   width: fit-content;
@@ -691,14 +820,21 @@ header a:hover {
   padding: 30px;
 }
 
-.fb-con p {
+.fb-admin .fb-con p {
   padding-bottom: 20px;
   border-bottom: 1px solid #ccd1e7;
+}
+
+.fb-customer .fb-con p {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddbdb9;
 }
 
 .fb-con h5 {
   color: #616d86;
   font-weight: 400;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .fb-customer {
@@ -716,6 +852,7 @@ header a:hover {
 }
 
 .fb-add {
+  position: relative;
   width: 100%;
   margin-top: 100px;
   display: flex;
@@ -741,3 +878,169 @@ textarea:focus {
 .fb-add button {
   height: 100px;
 }
+
+.fb-list-edited p {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #616d86;
+  border-top: 1px solid #616d86;
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.fb-add-radio {
+  display: flex;
+  position: absolute;
+  margin-top: -30px;
+}
+
+.fb-add-radio label {
+  margin-right: 10px;
+  color: #333;
+}
+
+.fb-add-radio input {
+  width: 16px;
+  height: 16px;
+  line-height: 20px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+
+/* fb-delete */
+
+.fb-del {
+  color: #333;
+}
+
+.fb-con h5 i {
+  margin: 0 5px;
+}
+
+.fb-del-open {
+  cursor: pointer;
+}
+
+.fb-del-open:hover {
+  text-decoration: underline;
+}
+
+.fb-del-con {
+  padding-top: 20px;
+  color: #616d86;
+}
+
+.fb-del-date {
+  padding: 10px 0;
+}
+
+
+/* mypage */
+
+.my-wrap {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(50% - 400px);
+  width: 800px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 100px;
+  text-align: center;
+}
+
+.my-wrap h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #272544;
+}
+
+.my-con {
+  padding-top: 20px;
+}
+
+.my-con > div {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  margin: 20px 0;
+  line-height: 45px;
+}
+
+.my-title {
+  background-color: #f5f5fa;
+  border: 1px solid #ccd1e7;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.my-input {
+  width: 430px;
+  border: 1px solid #ccd1e7;
+  border-radius: 10px;
+  display: flex;
+}
+
+.my-input input {
+  display: block;
+  width: 430px;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.my-input input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.my-input label {
+  line-height: 43px;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+.my-input2 {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.my-input2 input,
+.my-input2 select {
+  width: 32%;
+}
+
+.my-con .my-input-check {
+  margin-left: 170px;
+  width: 170px;
+  height: 20px;
+  line-height: 15px;
+  font-size: 14px;
+  margin-bottom: -15px;
+}
+
+.my-input-check input {
+  height: 18px;
+  width: 18px;
+}
+
+.my-btn {
+  margin-top: 20px;
+}
+
+
+/* client-detail */
+
+.client-wrap .client-info {
+  position: relative;
+  top: 50px;
+  left: calc(50% - 500px);
+  width: 1000px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+

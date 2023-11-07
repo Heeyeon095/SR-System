@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-
   <div class="fb-wrap">
 
-    <div class="fb-admin">
+    <div class="fb-admin on">
       <p class="fb-title">
         관리자(admin1234@naver.com)
+        <a href="">X</a>
       </p>
       <br>
       <div class="fb-con">
@@ -21,10 +21,9 @@
       </div>
     </div>
 
-    <div class="fb-customer on">
+    <div class="fb-customer">
       <p class="fb-title">
         작성자(user1234@naver.com)
-        <a href="">X</a>
       </p>
       <br>
       <div class="fb-con">
@@ -33,9 +32,10 @@
       </div>
     </div>
 
-    <div class="fb-admin">
+    <div class="fb-admin on">
       <p class="fb-title">
         관리자(admin1234@naver.com)
+        <a href="">X</a>
       </p>
       <br>
       <div class="fb-con">
@@ -46,10 +46,9 @@
       </div>
     </div>
 
-    <div class="fb-customer on">
+    <div class="fb-customer">
       <p class="fb-title">
         작성자(user1234@naver.com)
-        <a href="">X</a>
       </p>
       <br>
       <div class="fb-con">
@@ -58,22 +57,9 @@
       </div>
     </div>
 
-
-
-    <div class="fb-list-edited">
-      <p>2023-11-06 04:48 요청사항이 변경되었습니다.</p>
-    </div>
-
-    <div class="fb-list-edited">
-      <p>2023-11-06 04:48 요청사항이 변경되었습니다.</p>
-    </div>
-
-
-
-    <div class="fb-customer on">
+    <div class="fb-customer">
       <p class="fb-title">
         작성자(user1234@naver.com)
-        <a href="">X</a>
       </p>
       <br>
       <div class="fb-con">
@@ -82,29 +68,28 @@
       </div>
     </div>
 
-    <div class="fb-customer on">
+    <div class="fb-customer">
       <p class="fb-title">
         작성자(user1234@naver.com)
-        <a href="">X</a>
       </p>
       <br>
       <div class="fb-con">
         <p>기이다아아아아아아란 피드백 내용ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
         <h5>등록일 23-11-06 13:59:24</h5>
       </div>
-    </div>
-
-    
-    <div class="fb-list-edited">
-      <p>2023-11-06 04:48 요청사항이 변경되었습니다.</p>
     </div>
 
     <form action="" class="fb-add">
+      <div class="fb-add-radio">
+        <input type="radio" id="fb-open" name="fb-open" checked>
+        <label for="fb-open">전체공개</label>
+        <input type="radio" id="fb-open-admin" name="fb-open">
+        <label for="fb-open-admin">관리자공개</label>
+      </div>
       <textarea type="text" placeholder="피드백 내용을 입력해주세요"></textarea>
       <button type="submit" class="blue-btn">등록</button>
     </form>
 
   </div>
-
 </body>
 </html>
