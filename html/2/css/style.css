@@ -4,8 +4,8 @@
 }
 
 html, body {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 body * {
@@ -99,6 +99,15 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   background-color: #d9dadf;
+  overflow: auto;
+}
+
+.my-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #d9dadf;
+  overflow: auto;
+  margin-top: -50px;
 }
 
 
@@ -279,6 +288,7 @@ header {
   font-weight: bold;
   color: #333;
   z-index: 99999;
+  background-color: #fff;
 }
 
 header > div {
@@ -310,8 +320,8 @@ header > div {
 .gnb-menu {
   position: absolute;
   height: 0px;
-  border: 1px solid #d9dadf;
   background-color: #f7f7f7;
+  border: none;
   padding: 0 20px;
   margin-left: -20px;
   overflow: hidden;
@@ -320,9 +330,11 @@ header > div {
 
 .gnb-nav {
   cursor: pointer;
+  color: #616d86;
 }
 
 .gnb-nav:hover .gnb-menu {
+  border: 1px solid #d9dadf;
   height: 160px;
 }
 
@@ -413,7 +425,13 @@ header a:hover {
 }
 
 .search-input2 button {
+  position: absolute;
+  right: 5px;
   margin-left: 140px;
+}
+
+.search-input2 select {
+  width: 420px;
 }
 
 .search-btn {
@@ -950,7 +968,8 @@ textarea:focus {
   text-align: center;
 }
 
-.my-wrap h1 {
+.my-wrap h1,
+.my-wrap h2 {
   margin-top: 0;
   margin-bottom: 20px;
   color: #272544;
@@ -973,6 +992,7 @@ textarea:focus {
   border: 1px solid #ccd1e7;
   border-radius: 10px;
   width: 150px;
+  line-height: 42px;
 }
 
 .my-input {
@@ -982,7 +1002,12 @@ textarea:focus {
   display: flex;
 }
 
-.my-input input {
+.my-input > p {
+  padding-left: 10px;
+}
+
+.my-input input,
+.my-input select {
   display: block;
   width: 430px;
   margin-top: -1px;
@@ -1034,13 +1059,92 @@ textarea:focus {
 
 /* client-detail */
 
-.client-wrap .client-info {
+.client-wrap {
   position: relative;
   top: 50px;
   left: calc(50% - 500px);
   width: 1000px;
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
+.client-wrap .client-info {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.client-info-wrap {
+  border: 1px solid #ccd1e7;
+  border-bottom: none;
+}
+
+.client-info-wrap div {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #ccd1e7;
+}
+
+.client-info .client-title {
+  width: 200px;
+  padding-left: 10px;
+  background-color: #f5f5fa;
+  border-right: 1px solid #ccd1e7;
+}
+
+.client-info .client-input {
+  width: 720px;
+  padding-left: 10px;
+}
+
+.client-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.client-list table {
+  margin-top: 0;
+}
+
+.client-list table tr {
+  height: 45px;
+}
+
+
+/* graph */
+
+.my-chart {
+  position: relative;
+  top: 100px;
+  left: calc(50% - 600px);
+  width: 1200px;
+  height: 600px;
+}
+
+.my-chart-tab {
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+.my-chart-tab span {
+  border-right: 1px solid #616d86;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.my-chart-tab span:last-child {
+  border-right: none;
+}
+
+.my-chart-tab span:hover {
+  text-decoration: underline;
+}
+
+.my-chart-tab span.on {
+  color: #8357eb;
+  font-weight: bold;
+}
