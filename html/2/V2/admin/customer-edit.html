@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer-edit</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <header>
+
+    <div>
+      <div class="gnb-logo">
+        <a href="">로고</a>
+      </div>
+      <ul class="gnb-mid">
+        <li><a href="">SR관리</a></li>
+        <li class="gnb-nav">시스템 관리
+          <ul class="gnb-menu">
+            <li><a href="">고객사 관리</a></li>
+            <li><a href="">고객 관리</a></li>
+            <li><a href="">관리자 관리</a></li>
+          </ul>
+        </li>
+        <li><a href="">통계</a></li>
+        <li>이고객 님</li>
+      </ul>
+      <div class="gnb-login">
+        <a href="">로그아웃</a>
+      </div>
+    </div>
+
+  </header>
+  
+
+  <div class="my-bg">
+
+    <form class="my-wrap">
+
+      <h1>고객 수정</h1>
+
+      <div class="my-con">
+        
+        <div>
+          <div class="my-title">소속</div>
+          <div class="my-input my-input3">
+            <input type="text" readonly value="주식회사 테스트"></input>
+            <button class="purple-btn">선택</button>
+          </div>
+        </div>
+        
+        <div>
+          <div class="my-title">이메일</div>
+          <div class="my-input"><p>user1234@naver.com</p></div>
+        </div>
+        
+        <div>
+          <div class="my-title">이름</div>
+          <div class="my-input">
+            <input type="text" value="작성자">
+          </div>
+        </div>
+        
+        <div>
+          <div class="my-title">연락처</div>
+          <div class="my-input my-input2">
+            <select name="" id="">
+              <option value="010">010</option>
+              <option value="011">011</option>
+              <option value="012">012</option>
+              <option value="013">013</option>
+              <option value="014">014</option>
+              <option value="015">015</option>
+              <option value="016">016</option>
+              <option value="017">017</option>
+              <option value="018">018</option>
+              <option value="019">019</option>
+            </select>
+            <input type="number">
+            <input type="number">
+          </div>
+        </div>
+
+        <div class="my-input-check">
+          <input type="checkbox" id="my-passowrd">
+          <label for="my-passowrd">비밀번호 변경 시 선택</label>
+        </div>
+        
+        <div>
+          <div class="my-title">비밀번호</div>
+          <div class="my-input">
+            <input type="password">
+          </div>
+        </div>
+        
+        <div>
+          <div class="my-title">비밀번호 확인</div>
+          <div class="my-input">
+            <input type="password">
+          </div>
+        </div>
+        
+        <div>
+          <div class="my-title">상태</div>
+          <div class="my-input">
+            <select name="" id="">
+              <option value="">신청</option>
+              <option value="">정상</option>
+              <option value="">정지</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <button type="submit" class="blue-btn my-btn">수정</button>
+      
+    </form>
+
+  </div>
+
+</body>
+</html>

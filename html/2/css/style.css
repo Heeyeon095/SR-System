@@ -42,6 +42,10 @@ input, select {
   height: 45px;
 }
 
+select:focus {
+  outline: none;
+}
+
 input[type="checkbox"] {
   height: fit-content;
 }
@@ -451,6 +455,17 @@ header a:hover {
   top: 100px;
   width: 1200px;
   text-align: right;
+}
+
+.list tbody tr td a {
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+.list-wrap tr td a:hover {
+  text-decoration: underline;
 }
 
 .list {
@@ -966,13 +981,14 @@ textarea:focus {
   border-radius: 20px;
   padding: 100px;
   text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.my-wrap h1,
-.my-wrap h2 {
+.my-wrap h1 {
   margin-top: 0;
   margin-bottom: 20px;
   color: #272544;
+  font-size: 26px;
 }
 
 .my-con {
@@ -1056,6 +1072,20 @@ textarea:focus {
   margin-top: 20px;
 }
 
+.my-input3 input {
+  width: 280px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.my-input3 button {
+  margin-top: -1px;
+  margin-right: -1px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 
 /* client-detail */
 
@@ -1066,6 +1096,10 @@ textarea:focus {
   width: 1000px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.client-info {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .client-wrap .client-info {
@@ -1098,6 +1132,7 @@ textarea:focus {
 .client-info .client-input {
   width: 720px;
   padding-left: 10px;
+  overflow: hidden;
 }
 
 .client-btn {
@@ -1112,6 +1147,34 @@ textarea:focus {
 
 .client-list table tr {
   height: 45px;
+}
+
+.client-input select {
+  width: 33%;
+  margin-left: -10px;
+  border-radius: 0px;
+  border: none;
+  border-right: 1px solid #ccd1e7;
+  margin-top: -1px;
+}
+
+.client-input input {
+  width: calc(100% + 10px);
+  border-radius: 0px;
+  margin-left: -10px;
+  margin-top: -1px;
+  border: none;
+}
+
+.client-input input[type="number"] {
+  width: 33%;
+  border: 1px solid #ccd1e7;
+  border-top: none;
+  border-bottom: none;
+}
+
+.client-input input[type="number"]:last-child {
+  border-right: none;
 }
 
 
@@ -1147,4 +1210,85 @@ textarea:focus {
 .my-chart-tab span.on {
   color: #8357eb;
   font-weight: bold;
+}
+
+
+/* customer-popup */
+
+.popup {
+  position: fixed;
+  top: calc(50% - 350px);
+  left: calc(50% - 400px);
+  width: 800px;
+  height: 700px;
+  border: 1px solid #999;
+  padding: 20px;
+}
+
+.popup > p {
+  text-align: right;
+  font-size: 22px;
+}
+
+.popup > p > i {
+  cursor: pointer;
+}
+
+.popup-search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.popup-search input {
+  width: 650px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.popup-search button {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.popup-list {
+  width: 100%;
+  height: 550px;
+  margin-top: 20px;
+}
+
+.popup-list .list {
+  margin-top: 0;
+}
+
+.popup-list .list tbody {
+  display: block;
+  width: 100%;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.popup-list .list thead tr {
+  height: 45px;
+}
+
+.popup-list .list tbody tr {
+  display: block;
+  width: 100%;
+  border-top: none;
+}
+
+.popup-list .list tbody tr td {
+  display: block;
+  width: 100%;
+}
+
+.popup-list .list tbody tr td a {
+  height: 45px;
+  line-height: 45px;
+}
+
+.popup-list .list tbody tr td:hover a {
+  text-decoration: underline;
 }
